@@ -4,14 +4,6 @@ class Solution {
         int answer = 0;
         Arrays.sort(sides);
         
-        for(int i : sides){
-            if(sides[2]<sides[0]+sides[1]){
-                return answer =1;
-            }else{
-                return answer =2;
-            }
-        }
-        
-        return answer;
+        return sides[2] >= sides[0]+sides[1] ? 2:1;
     }
 }
