@@ -4,7 +4,6 @@ class Solution {
         for(int i=0; i<num_list.length; i++){
             if(num_list[i] == n){
                 answer = 1;
-                break; // n 값 발견 시 바로 반복문 종료
             }
         }
         return answer;
