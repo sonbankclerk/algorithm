@@ -1,17 +1,12 @@
-import java.util.*;
 class Solution {
     public int[] solution(int n, int k) {
-        List<Integer> multiples = new ArrayList<>();
+        int count = n/k;
+        int[] answer = new int[count];
+        int sum = 0;
         
-        for (int i = 1; i <= n; i++) {
-            if (i % k == 0) {
-                multiples.add(i);
-            }
-        }
-        
-        int[] answer = new int[multiples.size()];
-        for (int i = 0; i < multiples.size(); i++) {
-            answer[i] = multiples.get(i);
+        for(int i=0; i<count; i++){
+            sum += k;
+            answer[i] = sum;
         }
         
         return answer;
