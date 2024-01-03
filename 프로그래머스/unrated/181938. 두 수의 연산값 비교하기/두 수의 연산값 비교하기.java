@@ -1,13 +1,12 @@
 class Solution {
     public int solution(int a, int b) {
-        
-        String a_b_str = Integer.toString(a) + Integer.toString(b);
-        int a_b = Integer.valueOf(a_b_str);
-        
-        if(a_b >= 2*a*b){
-            return a_b;
+        int answer = 0;
+        int ab = Integer.parseInt(a+""+b);
+        if(2*a*b<=ab){
+            answer = ab;
         }else{
-            return 2*a*b;
+            answer= 2*a*b;
         }
+        return answer;
     }
 }
