@@ -125,3 +125,10 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+> 
+
+<hr>
+
+### 풀이
+- section 배열을 순회하면서, 변수 start와 end 사이 값이면 넘어간다.
+- start와 end 값을 재정의하고 롤러질을 한 횟수를 1 늘린다.
