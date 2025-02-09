@@ -1,0 +1,9 @@
+-- 코드를 작성해주세요
+/* 전체 개수에서 LENGTH가 NULL인 경우의 쿼리
+SELECT COUNT(*) AS FISH_COUNT
+FROM FISH_INFO
+WHERE LENGTH IS NULL */
+
+/*스칼라 서브쿼리를 이용한 풀이*/
+SELECT SUM(LENGTH IS NULL) AS FISH_COUNT
+FROM FISH_INFO
