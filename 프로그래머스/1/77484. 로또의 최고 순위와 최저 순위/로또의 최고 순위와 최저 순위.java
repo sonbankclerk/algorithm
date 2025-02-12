@@ -16,46 +16,26 @@ class Solution {
             }
         }
         
-        switch(count+errorCount){
-        case 6:
-            answer[0] = 1;
-            break;
-        case 5:
-            answer[0] = 2;
-            break;
-        case 4:
-            answer[0] = 3;
-            break;
-        case 3:
-            answer[0] = 4;
-            break;
-        case 2:
-            answer[0] = 5;
-            break;
-        default:
-            answer[0] = 6;
-        }
-        
-        switch(count){
-        case 6:
-            answer[1] = 1;
-            break;
-        case 5:
-            answer[1] = 2;
-            break;
-        case 4:
-            answer[1] = 3;
-            break;
-        case 3:
-            answer[1] = 4;
-            break;
-        case 2:
-            answer[1] = 5;
-            break;
-        default:
-            answer[1] = 6;
-        }
+        answer[0] = getGrade(count+errorCount);
+        answer[1] = getGrade(count);
         
         return answer;
+    }
+    
+    public int getGrade(int n){
+        switch(n){
+        case 6:
+            return 1;
+        case 5:
+            return 2;
+        case 4:
+            return 3;
+        case 3:
+            return 4;
+        case 2:
+            return 5;
+        default:
+            return 6;
+        }
     }
 }
