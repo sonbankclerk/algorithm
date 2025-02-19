@@ -1,5 +1,10 @@
 -- 코드를 입력하세요
-SELECT NAME
-FROM ANIMAL_INS
-ORDER BY DATETIME
-FETCH FIRST 1 ROW ONLY
+SELECT *
+FROM 
+    (SELECT name
+     FROM animal_ins
+     ORDER BY datetime
+     )
+WHERE ROWNUM = 1
+
+
