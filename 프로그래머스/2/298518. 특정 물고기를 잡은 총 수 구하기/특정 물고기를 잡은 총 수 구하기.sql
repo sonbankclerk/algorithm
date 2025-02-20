@@ -1,5 +1,17 @@
 -- 코드를 작성해주세요
+/* 스칼라 서브쿼리(SELECT, WHERE, HAVING)를 이용한 
 SELECT SUM(B.FISH_NAME IN ('BASS', 'SNAPPER')) FISH_COUNT
 FROM FISH_INFO A, FISH_NAME_INFO B
 WHERE A.FISH_TYPE = B.FISH_TYPE
+*/
 
+/*SELECT COUNT(B.FISH_NAME) FISH_COUNT
+FROM FISH_INFO A, FISH_NAME_INFO B
+WHERE A.FISH_TYPE = B.FISH_TYPE
+AND FISH_NAME IN ('BASS', 'SNAPPER');*/
+
+
+SELECT COUNT(*) fish_count
+FROM fish_info a, fish_name_info b
+WHERE a.fish_type = b.fish_type
+AND b.fish_name IN('BASS', 'SNAPPER')
